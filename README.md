@@ -20,6 +20,10 @@ This is a guide on setting up a login system using Python and Django. Follow the
 
 5. To run the server, type the command: `python manage.py runserver`.
 
+6. stop the server and run the command `python manage.py makemigrations` is typically used in Django projects to create new database migration files based on changes you've made to your models.
+
+7. After running `python manage.py makemigrations`, you'll typically need to run `python manage.py migrate` to apply the generated migration files and update the database schema accordingly.
+
 ## How the Django Project Works
 
 1. When you run the Django project, it first checks the settings of the app in the [settings.py](login_system/settings.py) file.
