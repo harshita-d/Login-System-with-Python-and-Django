@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth import authenticate, login
 # Create your views here.
 
 
@@ -33,6 +34,20 @@ def signup(request):
 
 
 def signin(request):
+    if request.method == 'POST':
+        userName = request.POST['username']
+        password = request.POST['password1']
+
+        user = authenticate(username=userName, password=password)
+
+        if user is not None:
+            login(request, user)
+            fname = user.first_name
+            return render(request, "authentication/index.html", {"fname": fname})
+
+        else:
+            messages.error(request, "credentials does not match")
+            return redirect("home")
     return render(request, "authentication/signin.html")
 
 
