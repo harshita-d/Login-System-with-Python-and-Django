@@ -81,7 +81,3 @@ profiles_project/
 ## Usage
 
 The `Profiles_Project` folder, in conjunction with the `Profiles_API` app, forms the entire web application for managing user profiles. It serves as the entry point to the Django project, containing critical configurations and settings required for the application to function properly.
-
----
-
-Please note that the actual structure and content of the `Profiles_API` and `Profiles_Project` folders may vary based on the project's specific implementation and customization. The provided structure is a general representation of a Django project and app, and the actual code may differ in practice.
