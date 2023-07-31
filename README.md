@@ -1,3 +1,29 @@
+# Login System with Python and Django
+
+This project is a simple Login System built using Python and Django. It provides basic authentication features, allowing users to register, log in, and log out. The project is intended to serve as a starting point for building more complex web applications that require user authentication.
+
+## Features
+
+- User Registration: New users can sign up and create an account by providing a unique username and password.
+- User Login: Registered users can log in with their credentials to access the authenticated portions of the application.
+- User Logout: Authenticated users can log out to terminate their session.
+
+## Installation
+
+To run the Login System locally, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```
+git clone https://github.com/harshita-d/Login-System-with-Python-and-Django.git
+```
+
+2. Change the working directory to the project folder:
+
+```
+cd Login-System-with-Python-and-Django
+```
+
 ## Vagrant Setup
 
 ### Prerequisites
